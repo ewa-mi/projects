@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Projects v-bind:projects="projects" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Projects from "./components/Projects";
 
 export default {
-  name: 'App',
+  name: "app",
   components: {
-    HelloWorld
-  }
-}
+    Projects,
+  },
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          title: "Universe",
+          tech: "React",
+        },
+        {
+          id: 2,
+          title: "Book App",
+          tech: "React-Redux, Node",
+        },
+        {
+          id: 3,
+          title: "Click the Pic",
+          tech: "React-Redux, Node",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 </style>
