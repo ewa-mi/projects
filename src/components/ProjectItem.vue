@@ -29,14 +29,4 @@ export default {
   width: 250px;
   margin-bottom: 20px;
 }
-
-.del {
-  background: peru;
-  color: whitesmoke;
-  border: none;
-  padding: 5px 9px;
-  border-radius: 50%;
-  cursor: pointer;
-  float: right;
-}
 </style>
