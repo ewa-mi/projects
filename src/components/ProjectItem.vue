@@ -1,8 +1,8 @@
 <template>
   <div class="cards-area">
     <div class="project-item">
-      <h1>{{ project.title }}</h1>
-      <p>{{ project.tech }}</p>
+      <h1 class="projectText">{{ project.title }}</h1>
+      <p class="techText">{{ project.tech }}</p>
     </div>
   </div>
 </template>
@@ -24,9 +24,15 @@ export default {
 .project-item {
   background: greenyellow;
   padding: 20px;
-  border: 5px coral solid;
+  border: 5px white solid;
   border-radius: 12px;
   width: 250px;
+  height: 250px;
   margin-bottom: 20px;
+}
+
+.projectText,
+.techText {
+  text-align: center;
 }
 </style>
