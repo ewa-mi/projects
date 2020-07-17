@@ -1,15 +1,18 @@
 <template>
   <div id="app">
+    <Header />
     <Projects v-bind:projects="projects" />
   </div>
 </template>
 
 <script>
+import Header from "./components/layout/Header";
 import Projects from "./components/Projects";
 
 export default {
   name: "app",
   components: {
+    Header,
     Projects,
   },
   data() {
@@ -46,5 +49,7 @@ export default {
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+
+  background-color: rgb(24, 24, 24);
 }
 </style>
