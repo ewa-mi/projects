@@ -3,6 +3,15 @@
     <div class="project-item">
       <h1 class="projectText">{{ project.title }}</h1>
       <p class="techText">{{ project.tech }}</p>
+      <hr />
+      <div class="proLinksArea">
+        <a class="proLink" :href="`${project.linkGithub}`" target="_blank"
+          >CODE</a
+        >
+        <a class="proLink" :href="`${project.linkWebsite}`" target="_blank"
+          >WEBSITE</a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -26,13 +35,31 @@ export default {
   padding: 20px;
   border: 5px white solid;
   border-radius: 12px;
-  width: 250px;
-  height: 250px;
+  width: 320px;
+  height: 320px;
   margin-bottom: 20px;
 }
 
-.projectText,
+.projectText {
+  text-align: center;
+  margin-bottom: 15px;
+}
 .techText {
   text-align: center;
+  margin-bottom: 55px;
+}
+
+.proLinksArea {
+  margin-top: 65px;
+  text-align: center;
+}
+.proLink {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(23, 23, 23);
+  background: white;
+  border: 2px white solid;
+  border-radius: 5px;
+  margin-left: 7px;
 }
 </style>
