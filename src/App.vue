@@ -27,7 +27,6 @@ export default {
           tech: "React",
           linkGithub: "https://github.com/ewa-mi/feed_in_react",
           linkWeb: "https://out-of-this-world-react-app.netlify.app",
-          target: "_blank",
         },
         {
           id: 2,
@@ -35,7 +34,6 @@ export default {
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/book-app-client",
           linkWeb: "https://book-app-portfolio.netlify.app/",
-          target: "_blank",
         },
         {
           id: 3,
@@ -43,7 +41,6 @@ export default {
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/clicthepic_FE",
           linkWeb: "https://clickthepic.netlify.app",
-          target: "_blank",
         },
       ],
       footers: [
@@ -51,13 +48,11 @@ export default {
           id: 1,
           name: "Github",
           url: "https://www.github.com/ewa-mi",
-          target: "_blank",
         },
         {
           id: 2,
           name: "LinkedIn",
           url: "https://www.linkedin.com/in/ewa-michalowska-b8429b78/",
-          target: "_blank",
         },
       ],
     };

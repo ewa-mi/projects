@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="footer-item">
-      <a :href="`${footer.url}`" class="fooName">{{ footer.name }}</a>
+      <a :href="`${footer.url}`" target="_blank" class="fooName">{{
+        footer.name
+      }}</a>
     </div>
   </div>
 </template>
