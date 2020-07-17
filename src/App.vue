@@ -26,7 +26,7 @@ export default {
           title: "Out of This World",
           tech: "React, Bootstrap",
           linkGithub: "https://github.com/ewa-mi/feed_in_react",
-          linkWeb: "https://out-of-this-world-react-app.netlify.app",
+          linkWebsite: "https://out-of-this-world-react-app.netlify.app",
         },
         {
           id: 2,
