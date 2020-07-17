@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="footer-item">
-      <h1 class="fooName">{{ footer.name }}</h1>
+      <a :href="`${footer.url}`" class="fooName">{{ footer.name }}</a>
     </div>
   </div>
 </template>
@@ -18,13 +18,16 @@ export default {
   background: rgb(245, 245, 244);
   border: 2px white solid;
   border-radius: 5px;
-  width: 150px;
-  height: 80px;
+  width: 130px;
+  height: 70px;
   margin-bottom: 6px;
-  padding-top: 15px;
+  padding-top: 12px;
+  text-align: center;
 }
 
 .fooName {
-  text-align: center;
+  font-size: 30px;
+  color: rgb(21, 21, 21);
+  text-decoration: none;
 }
 </style>
