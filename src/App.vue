@@ -34,7 +34,7 @@ export default {
           title: "Book App",
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/book-app-client",
-          linkWeb: "https://book-app-portfolio.netlify.app/",
+          linkWebsite: "https://book-app-portfolio.netlify.app/",
           img: bookapp,
         },
         {
@@ -42,7 +42,7 @@ export default {
           title: "Click the Pic",
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/clicthepic_FE",
-          linkWeb: "https://clickthepic.netlify.app",
+          linkWebsite: "https://clickthepic.netlify.app",
           img: click,
         },
         {
