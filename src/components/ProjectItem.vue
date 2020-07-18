@@ -13,6 +13,9 @@
         >
       </div>
     </div>
+    <div>
+      <img class="demoImg" :src="`${project.img}`" />
+    </div>
   </div>
 </template>
 
@@ -61,5 +64,11 @@ export default {
   border: 2px white solid;
   border-radius: 5px;
   margin-left: 7px;
+}
+
+.demoImg {
+  height: 320px;
+  border: 5px white solid;
+  border-radius: 12px;
 }
 </style>

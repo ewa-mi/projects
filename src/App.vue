@@ -10,6 +10,9 @@
 import Header from "./components/layout/Header";
 import Projects from "./components/Projects";
 import Footers from "./components/Footers";
+import bookapp from "./components/images/bookapp.png";
+import click from "./components/images/click.png";
+import cosmos from "./components/images/cosmos.png";
 
 export default {
   name: "app",
@@ -27,6 +30,7 @@ export default {
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/book-app-client",
           linkWeb: "https://book-app-portfolio.netlify.app/",
+          img: bookapp,
         },
         {
           id: 2,
@@ -34,6 +38,7 @@ export default {
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/clicthepic_FE",
           linkWeb: "https://clickthepic.netlify.app",
+          img: click,
         },
         {
           id: 3,
@@ -41,6 +46,7 @@ export default {
           tech: "React, Bootstrap",
           linkGithub: "https://github.com/ewa-mi/feed_in_react",
           linkWebsite: "https://out-of-this-world-react-app.netlify.app",
+          img: cosmos,
         },
       ],
       footers: [
