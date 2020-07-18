@@ -34,23 +34,25 @@ export default {
 
 .project-item {
   background: greenyellow;
+  color: #242a2e;
   padding: 20px;
   border: 5px white solid;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   border-right: none;
-
   width: 320px;
   height: 320px;
-  margin-bottom: 20px;
+  font-size: 15px;
 }
 
 .projectText {
+  color: #242a2e;
   text-align: center;
   margin-bottom: 15px;
   margin-top: 40px;
 }
 .techText {
+  color: #242a2e;
   text-align: center;
   margin-bottom: 55px;
 }
@@ -62,11 +64,14 @@ export default {
 .proLink {
   padding: 10px;
   text-decoration: none;
-  color: rgb(23, 23, 23);
+  color: #242a2e;
   background: white;
   border: 2px white solid;
   border-radius: 5px;
   margin-left: 7px;
+}
+.proLink:hover {
+  background: whitesmoke;
 }
 
 .demoImg {
