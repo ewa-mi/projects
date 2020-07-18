@@ -23,24 +23,24 @@ export default {
       projects: [
         {
           id: 1,
-          title: "Out of This World",
-          tech: "React, Bootstrap",
-          linkGithub: "https://github.com/ewa-mi/feed_in_react",
-          linkWebsite: "https://out-of-this-world-react-app.netlify.app",
-        },
-        {
-          id: 2,
           title: "Book App",
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/book-app-client",
           linkWeb: "https://book-app-portfolio.netlify.app/",
         },
         {
-          id: 3,
+          id: 2,
           title: "Click the Pic",
           tech: "React-Redux, Node",
           linkGithub: "https://github.com/ewa-mi/clicthepic_FE",
           linkWeb: "https://clickthepic.netlify.app",
+        },
+        {
+          id: 3,
+          title: "Out of This World",
+          tech: "React, Bootstrap",
+          linkGithub: "https://github.com/ewa-mi/feed_in_react",
+          linkWebsite: "https://out-of-this-world-react-app.netlify.app",
         },
       ],
       footers: [
