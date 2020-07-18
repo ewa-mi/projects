@@ -33,15 +33,17 @@
   height: 500px;
   padding: 32px 32px;
   margin-top: 49px;
-  clip-path: circle(11% at 84% 10%);
+  clip-path: circle(50px at calc(100% - 51px) 10%);
   transition: all ease-in-out 0.4s;
   background-color: white;
   cursor: pointer;
 }
 .card__infoicon {
   position: absolute;
-  top: 40px;
-  right: 22px;
+  top: 0;
+  right: 0;
+  padding: 40px 15px;
+  background: white;
   font-size: 20px;
   color: #242a2e;
   transition: ease-out 0.4s;
@@ -49,7 +51,7 @@
 }
 .card__title {
   margin: 0;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.8;
   color: #242a2e;
 }

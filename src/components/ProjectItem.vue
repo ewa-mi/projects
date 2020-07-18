@@ -13,7 +13,9 @@
       </div>
     </div>
     <div>
-      <img class="demoImg" :src="`${project.img}`" />
+      <a :href="`${project.linkWebsite}`" target="_blank">
+        <img class="demoImg" :src="`${project.img}`" />
+      </a>
     </div>
   </div>
 </template>
@@ -71,7 +73,10 @@ export default {
   margin-left: 7px;
 }
 .proLink:hover {
-  background: whitesmoke;
+  background: #242a2e;
+  color: white;
+  transition: ease-out 0.4s;
+  border: 2px #242a2e solid;
 }
 
 .demoImg {
@@ -80,5 +85,11 @@ export default {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   border-left: none;
+  cursor: pointer;
+}
+
+.demoImg:hover {
+  filter: grayscale(100%) brightness(70%);
+  transition: ease-out 0.4s;
 }
 </style>
