@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="footerItemsArea">
     <div class="footer-item">
-      <a :href="`${footer.url}`" target="_blank" class="fooName">{{
-        footer.name
-      }}</a>
+      <a :href="`${footer.url}`" target="_blank" class="fooName">
+        <img :src="`${footer.svg}`" />
+      </a>
     </div>
   </div>
 </template>
@@ -17,19 +17,14 @@ export default {
 
 <style scoped>
 .footer-item {
-  background: rgb(245, 245, 244);
-  border: 2px white solid;
-  border-radius: 5px;
-  width: 130px;
-  height: 70px;
-  margin-bottom: 6px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
   padding-top: 12px;
-  text-align: center;
 }
 
-.fooName {
-  font-size: 30px;
-  color: rgb(21, 21, 21);
-  text-decoration: none;
+.footerItemsArea {
+  display: flex;
+  justify-content: center;
 }
 </style>

@@ -1,27 +1,29 @@
 <template>
-  <div class="card" tabindex="0">
-    <span class="card__infoicon">
-      <h4 class="fa fa-info">ABOUT</h4>
-    </span>
-    <h1 class="card__title">About me</h1>
-    <p class="card__description">
-      Hi! My name is Ewa.
-      <br />
-      I’m a junior full-stack developer with a background in media communication
-      and a few years of experience in graphic design. Highly driven and
-      passionate about modern JavaScript and CSS.
-      <br />
-      <br />
-      I created this Vue app to show you my recent projects. If you want to see
-      more of my works, visit
-      <a
-        class="card__reference"
-        href="https://github.com/ewa-mi"
-        target="_blank"
-        >my Github</a
-      >
-      !
-    </p>
+  <div>
+    <div class="card">
+      <span class="card__infoicon">
+        <h4 class="fa fa-info">ABOUT</h4>
+      </span>
+      <h1 class="card__title">About me</h1>
+      <p class="card__description">
+        Hi! My name is Ewa.
+        <br />
+        I’m a junior full-stack developer with a background in media
+        communication and a few years of experience in graphic design. Highly
+        driven and passionate about modern JavaScript and CSS.
+        <br />
+        <br />
+        I created this Vue app to show you my recent projects. If you want to
+        see more of my works, visit
+        <a
+          class="card__reference"
+          href="https://github.com/ewa-mi"
+          target="_blank"
+          >my Github</a
+        >
+        !
+      </p>
+    </div>
   </div>
 </template>
 
@@ -30,10 +32,9 @@
 <style scoped>
 .card {
   position: relative;
-  height: 500px;
   padding: 32px 32px;
   margin-top: 49px;
-  clip-path: circle(50px at calc(100% - 51px) 10%);
+  clip-path: circle(50px at calc(100% - 51px) 50px);
   transition: all ease-in-out 0.4s;
   background-color: white;
   cursor: pointer;

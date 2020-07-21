@@ -17,6 +17,8 @@ import Footers from "./components/Footers";
 import bookapp from "./components/images/bookapp.png";
 import click from "./components/images/click.png";
 import cosmos from "./components/images/cosmos.png";
+import github from "./components/layout/github.svg";
+import linkedin from "./components/layout/linkedin.svg";
 
 export default {
   name: "app",
@@ -57,12 +59,12 @@ export default {
       footers: [
         {
           id: 1,
-          name: "Github",
+          svg: github,
           url: "https://www.github.com/ewa-mi",
         },
         {
           id: 2,
-          name: "LinkedIn",
+          svg: linkedin,
           url: "https://www.linkedin.com/in/ewa-michalowska-b8429b78/",
         },
       ],
