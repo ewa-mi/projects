@@ -17,8 +17,8 @@ export default {
 
 <style scoped>
 .footer-item {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 10px;
   padding-top: 12px;
 }

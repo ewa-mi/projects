@@ -57,8 +57,9 @@
   color: #242a2e;
 }
 .card__description {
+  padding-top: 10px;
   margin: 0;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.6;
   color: #242a2e;
 }
