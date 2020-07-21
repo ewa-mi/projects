@@ -89,7 +89,7 @@ export default {
 }
 
 .demoImg:hover {
-  filter: grayscale(100%) brightness(70%);
+  transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 </style>

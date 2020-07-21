@@ -4,8 +4,13 @@
     <div class="grid">
       <Info />
       <Projects v-bind:projects="projects" />
+      <div class="rightSidebar">
+        <h1 class="tech">TECH</h1>
+
+        <Skills v-bind:skills="skills" class="skills" />
+      </div>
     </div>
-    <Footers v-bind:footers="footers" />
+    <Footers v-bind:footers="footers" class="footers" />
   </div>
 </template>
 
@@ -13,12 +18,18 @@
 import Header from "./components/layout/Header";
 import Info from "./components/Info";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import Footers from "./components/Footers";
+//assets:
 import bookapp from "./components/images/bookapp.png";
 import click from "./components/images/click.png";
 import cosmos from "./components/images/cosmos.png";
 import github from "./components/layout/github.svg";
 import linkedin from "./components/layout/linkedin.svg";
+import docker from "./components/tech-icons/docker.svg";
+import bootstrap from "./components/tech-icons/bootstrap.svg";
+import css from "./components/tech-icons/css.svg";
+import git from "./components/tech-icons/git.svg";
 
 export default {
   name: "app",
@@ -26,6 +37,7 @@ export default {
     Header,
     Info,
     Projects,
+    Skills,
     Footers,
   },
   data() {
@@ -68,6 +80,24 @@ export default {
           url: "https://www.linkedin.com/in/ewa-michalowska-b8429b78/",
         },
       ],
+      skills: [
+        {
+          id: 1,
+          svg: docker,
+        },
+        {
+          id: 2,
+          svg: bootstrap,
+        },
+        {
+          id: 3,
+          svg: css,
+        },
+        {
+          id: 4,
+          svg: git,
+        },
+      ],
     };
   },
 };
@@ -93,5 +123,27 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 20px;
   padding: 18px;
+}
+
+.footers {
+  display: flex;
+  justify-content: center;
+}
+
+.rightSidebar {
+  display: flex;
+  background-color: white;
+  margin-top: 50px;
+  border-radius: 12px;
+  height: 500px;
+  justify-content: center;
+}
+
+.tech {
+  font-size: 21px;
+  line-height: 1.8;
+  color: #242a2e;
+  text-align: center;
+  padding: 20px;
 }
 </style>

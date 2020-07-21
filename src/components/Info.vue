@@ -47,7 +47,7 @@
   background: white;
   font-size: 20px;
   color: #242a2e;
-  transition: ease-out 0.4s;
+  transition: ease-out 0.2s;
   font-style: normal;
 }
 .card__title {
@@ -69,7 +69,7 @@
   border-bottom: 1px solid transparent;
   color: #09f;
   text-decoration: none;
-  transition: ease-in 0.3s;
+  transition: ease-in 0.4s;
 }
 .card__reference:hover {
   border-bottom-color: #09f;
@@ -77,7 +77,7 @@
 .card:hover,
 .card:focus {
   clip-path: circle(85%);
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08);
   background: #fff;
   outline: none;
@@ -85,9 +85,5 @@
 .card:hover .card__infoicon,
 .card:focus .card__infoicon {
   opacity: 0;
-}
-.card:focus {
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12), 0px 3px 18px rgba(0, 0, 0, 0.08),
-    0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 </style>

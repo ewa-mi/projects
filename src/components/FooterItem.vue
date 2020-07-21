@@ -1,11 +1,7 @@
 <template>
-  <div class="footerItemsArea">
-    <div class="footer-item">
-      <a :href="`${footer.url}`" target="_blank" class="fooName">
-        <img :src="`${footer.svg}`" />
-      </a>
-    </div>
-  </div>
+  <a :href="`${footer.url}`" target="_blank">
+    <img class="footer-item" :src="`${footer.svg}`" />
+  </a>
 </template>
 
 <script lang="ts">
@@ -19,12 +15,13 @@ export default {
 .footer-item {
   width: 60px;
   height: 60px;
-  margin-bottom: 10px;
+  margin: 5px;
+  margin-bottom: 25px;
   padding-top: 12px;
 }
 
-.footerItemsArea {
-  display: flex;
-  justify-content: center;
+.footer-item:hover {
+  transition: ease-out 0.3s;
+  filter: grayscale(100%) brightness(100%);
 }
 </style>
