@@ -31,7 +31,6 @@ export default {
 .cards-area {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .project-item {
@@ -89,6 +88,7 @@ export default {
 }
 
 .demoImg:hover {
+  filter: grayscale(100%) brightness(90%);
   transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div v-bind:key="project.id" v-for="project in projects">
+    <div
+      v-bind:key="project.id"
+      v-for="project in projects"
+      class="card-area-wrapper"
+    >
       <ProjectItem v-bind:project="project" />
     </div>
   </div>
@@ -18,4 +22,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.card-area-wrapper {
+  margin-bottom: 20px;
+}
+</style>

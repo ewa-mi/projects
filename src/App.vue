@@ -3,11 +3,12 @@
     <Header />
     <div class="grid">
       <Info />
-      <Projects v-bind:projects="projects" />
-      <div class="rightSidebar">
-        <h1 class="tech">TECH</h1>
-
-        <Skills v-bind:skills="skills" class="skills" />
+      <Projects v-bind:projects="projects" class="projects" />
+      <div class="rightSidebarWrapper">
+        <div class="rightSidebar">
+          <h1 class="tech">TECH</h1>
+          <Skills v-bind:skills="skills" class="skills" />
+        </div>
       </div>
     </div>
     <Footers v-bind:footers="footers" class="footers" />
@@ -114,7 +115,6 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 1;
-
   background-color: rgb(24, 24, 24);
 }
 
@@ -122,7 +122,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 20px;
-  padding: 18px;
+  margin-top: 50px;
 }
 
 .footers {
@@ -132,11 +132,11 @@ body {
 
 .rightSidebar {
   display: flex;
+  flex-direction: column;
   background-color: white;
-  margin-top: 50px;
   border-radius: 12px;
-  height: 500px;
-  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
 }
 
 .tech {
@@ -144,6 +144,6 @@ body {
   line-height: 1.8;
   color: #242a2e;
   text-align: center;
-  padding: 20px;
+  padding-bottom: 10px;
 }
 </style>
