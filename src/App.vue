@@ -21,7 +21,7 @@ import Info from "./components/Info";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footers from "./components/Footers";
-//assets:
+//assets (tech-skills):
 import bookapp from "./components/images/bookapp.png";
 import click from "./components/images/click.png";
 import cosmos from "./components/images/cosmos.png";
@@ -31,6 +31,15 @@ import docker from "./components/tech-icons/docker.svg";
 import bootstrap from "./components/tech-icons/bootstrap.svg";
 import css from "./components/tech-icons/css.svg";
 import git from "./components/tech-icons/git.svg";
+import html from "./components/tech-icons/html.svg";
+import js from "./components/tech-icons/js.svg";
+import node from "./components/tech-icons/node.svg";
+import postgres from "./components/tech-icons/postgres.svg";
+import react from "./components/tech-icons/react.svg";
+import redux from "./components/tech-icons/redux.svg";
+import sass from "./components/tech-icons/sass.svg";
+import sequelize from "./components/tech-icons/sequelize.svg";
+import vue from "./components/tech-icons/vue.svg";
 
 export default {
   name: "app",
@@ -84,18 +93,67 @@ export default {
       skills: [
         {
           id: 1,
-          svg: docker,
+          name: "html",
+          svg: html,
         },
         {
           id: 2,
-          svg: bootstrap,
-        },
-        {
-          id: 3,
+          name: "css",
           svg: css,
         },
         {
+          id: 3,
+          name: "js",
+          svg: js,
+        },
+        {
           id: 4,
+          name: "react",
+          svg: react,
+        },
+        {
+          id: 5,
+          name: "redux",
+          svg: redux,
+        },
+        {
+          id: 6,
+          name: "vue",
+          svg: vue,
+        },
+        {
+          id: 7,
+          name: "node",
+          svg: node,
+        },
+        {
+          id: 8,
+          name: "postgres",
+          svg: postgres,
+        },
+        {
+          id: 9,
+          name: "docker",
+          svg: docker,
+        },
+        {
+          id: 10,
+          name: "sequelize",
+          svg: sequelize,
+        },
+        {
+          id: 11,
+          name: "bootstrap",
+          svg: bootstrap,
+        },
+        {
+          id: 12,
+          name: "sass",
+          svg: sass,
+        },
+        {
+          id: 13,
+          name: "git",
           svg: git,
         },
       ],
@@ -133,17 +191,13 @@ body {
 .rightSidebar {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 12px;
   align-items: center;
-  padding: 20px 0;
 }
 
 .tech {
   font-size: 21px;
-  line-height: 1.8;
-  color: #242a2e;
+  color: white;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 </style>

@@ -33,7 +33,6 @@
 .card {
   position: relative;
   padding: 32px 32px;
-  margin-top: 49px;
   clip-path: circle(50px at calc(100% - 51px) 50px);
   transition: all ease-in-out 0.4s;
   background-color: white;

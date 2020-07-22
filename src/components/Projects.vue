@@ -24,6 +24,6 @@ export default {
 
 <style scoped>
 .card-area-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="skill-item" :src="`${skill.svg}`" />
+    <img class="skill-item" :src="`${skill.svg}`" :title="`${skill.name}`" />
   </div>
 </template>
 
@@ -13,9 +13,7 @@ export default {
 
 <style scoped>
 .skill-item {
-  width: 60px;
-  height: 60px;
-  margin: 10px;
-  padding-top: 10px;
+  height: 55px;
+  margin: 9px;
 }
 </style>
