@@ -6,7 +6,7 @@
       <Projects v-bind:projects="projects" class="projects" />
       <div class="rightSidebarWrapper">
         <div class="rightSidebar">
-          <h1 class="tech">TECH</h1>
+          <h1 class="tech">MY STACK</h1>
           <Skills v-bind:skills="skills" class="skills" />
         </div>
       </div>

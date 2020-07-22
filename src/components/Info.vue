@@ -10,11 +10,11 @@
         <br />
         I’m a junior full-stack developer with a background in media
         communication and a few years of experience in graphic design. Highly
-        driven and passionate about modern JavaScript and CSS.
+        driven and passionate about modern JavaScript and CSS tooling.
         <br />
         <br />
-        I created this Vue app to show you my recent projects. If you want to
-        see more of my works, visit
+        I created this simple Vue app to show you my recent apps - MVPs. If you
+        want to see more of my works, visit
         <a
           class="card__reference"
           href="https://github.com/ewa-mi"
