@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header />
+    <Header class="headTitle" />
     <div class="grid">
-      <Info />
+      <Info class="infoSidebar" />
       <Projects v-bind:projects="projects" class="projects" />
       <div class="rightSidebarWrapper">
         <div class="rightSidebar">
@@ -21,7 +21,7 @@ import Info from "./components/Info";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footers from "./components/Footers";
-//assets (tech-skills):
+//assets:
 import bookapp from "./components/images/bookapp.png";
 import click from "./components/images/click.png";
 import cosmos from "./components/images/cosmos.png";
@@ -199,5 +199,43 @@ body {
   color: white;
   text-align: center;
   padding-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .infoSidebar {
+    grid-area: header;
+  }
+  .projects {
+    grid-area: main;
+  }
+  .rightSidebarWrapper {
+    grid-area: footer;
+  }
+  .demoImg {
+    display: none;
+  }
+  .project-item.project-item {
+    border-radius: 12px;
+    border-right: 5px white solid;
+  }
+  .footers {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid gray;
+  }
+}
+
+@media (max-width: 375px) {
+  .project-item {
+    max-width: 280px;
+    max-height: 280px;
+  }
 }
 </style>
