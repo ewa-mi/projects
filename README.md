@@ -1,8 +1,8 @@
 ## PROJECTS / my recent apps
 
-#### I created this simple app to showcase some of my recent projects (MVPs) and at the same time - to practice a bit with Vue.js.
-:exclamation: Click [HERE](https://my-recent-apps.netlify.app/) to check out the deployed version :exclamation:
+#### I created this simple app to showcase some of my recent projects (MVPs) and at the same time - to practice a bit with Vue.js and responsive design.
 
+:exclamation: Click [HERE](https://my-recent-apps.netlify.app/) to check out the deployed version :exclamation:
 
 ### Demo
 
@@ -15,10 +15,13 @@
 - clone this app
 - cd into your project
 - install dependencies:
+
 ```
 npm install
 ```
+
 - start development server:
+
 ```
 npm run serve
 ```
