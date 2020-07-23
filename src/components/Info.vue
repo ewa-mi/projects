@@ -104,6 +104,14 @@
   .card__infoicon {
     display: none;
   }
+  .card:hover,
+  .card:focus {
+    clip-path: none;
+    border-radius: none;
+    box-shadow: none;
+    background: none;
+    cursor: auto;
+  }
 }
 @media (max-width: 375px) {
   .card__description,
