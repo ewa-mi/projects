@@ -2,7 +2,7 @@
   <div>
     <div class="card">
       <span class="card__infoicon">
-        <h4 class="fa fa-info">ABOUT</h4>
+        <h4 class="fa-info">ABOUT</h4>
       </span>
       <h1 class="card__title">About me</h1>
       <p class="card__description">
@@ -84,5 +84,28 @@
 .card:hover .card__infoicon,
 .card:focus .card__infoicon {
   opacity: 0;
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 768px) {
+  .card {
+    clip-path: none;
+    transition: none;
+    border-radius: 12px;
+    background: none;
+    padding-top: 0px;
+  }
+  .card__description,
+  .card__title {
+    color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .card__infoicon {
+    display: none;
+  }
 }
 </style>
