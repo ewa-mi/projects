@@ -232,4 +232,11 @@ body {
     border-top: 1px solid gray;
   }
 }
+
+@media (max-width: 375px) {
+  .project-item {
+    max-width: 280px;
+    max-height: 280px;
+  }
+}
 </style>

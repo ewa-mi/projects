@@ -86,9 +86,6 @@
   opacity: 0;
 }
 
-@media (max-width: 500px) {
-}
-
 @media (max-width: 768px) {
   .card {
     clip-path: none;
@@ -106,6 +103,12 @@
   }
   .card__infoicon {
     display: none;
+  }
+}
+@media (max-width: 375px) {
+  .card__description,
+  .card__title {
+    max-width: 280px;
   }
 }
 </style>
