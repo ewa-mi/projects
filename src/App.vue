@@ -221,14 +221,13 @@ body {
   .demoImg {
     display: none;
   }
-  .project-item {
+  .project-item.project-item {
     border-radius: 12px;
-    border: 5px white solid;
+    border-right: 5px white solid;
   }
   .footers {
     margin-top: 20px;
     padding-top: 15px;
-
     border-top: 1px solid gray;
   }
 }
