@@ -7,7 +7,10 @@
         <a class="proLink" :href="`${project.linkGithub}`" target="_blank"
           >CODE</a
         >
-        <a class="proLink" :href="`${project.linkWebsite}`" target="_blank"
+        <a
+          class="proLink webURI"
+          :href="`${project.linkWebsite}`"
+          target="_blank"
           >WEBSITE</a
         >
       </div>
@@ -91,5 +94,11 @@ export default {
   filter: grayscale(100%) brightness(90%);
   transition: ease-out 0.4s;
   transition: ease-out 0.4s;
+}
+
+@media (max-width: 768px) {
+  .webURI {
+    display: none;
+  }
 }
 </style>
